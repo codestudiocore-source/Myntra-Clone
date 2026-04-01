@@ -12,7 +12,7 @@ header{
     justify-content: space-between;
     border-bottom: 1px solid #b6b1b1;
     height: 80px;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 100;
     width: 100%
@@ -81,7 +81,7 @@ header{
 .action-bar{
     display: flex;
     min-width: 200px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .action-container{
     display: flex;
@@ -131,53 +131,28 @@ text-decoration: none;
     color: #282c3f;
     text-decoration: none;
 }
-.category-items{
+.category_heading {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+
+.category-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
 }
+
 .sale-item{
     width: 250px;
-    margin: 20px;
-}
-.category-item a{
-    color: #282c3f;
-    text-decoration: none;
-}
-.deal-item{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.offer-item{
-        width: 250px;
-        margin: 20px;
-}
-.deal-item a{
-    color: #282c3f;
-    text-decoration: none;
 }
 .banner-shopbycollection{
     width: 95vw;
     margin: 20px auto;
-}
-.category-collection{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 50px;
-    padding-right: 50px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-.category-collection a{
-    color: #282c3f;
-    text-decoration: none;
-}
-.category-item{
-    width: 250px;
-    margin: 0 auto;
 }
 /* footer section */
 .footer {
@@ -264,16 +239,10 @@ a:hover {
 .section img {
     width: 45px;
 }
-.InfoSection {
-    width: 500px;
-    border-top: 1px solid #eaeaec;
-    margin-top: 40px;
-    padding-top: 20px;
-    font-size: 14px;
+.copyright {
     color: #94969f;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: end;
+    padding: 15px;
 }
 @media (max-width: 992px) {
     .useful-link  {
