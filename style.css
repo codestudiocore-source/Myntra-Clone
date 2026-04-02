@@ -241,8 +241,9 @@ a:hover {
 }
 .copyright {
     color: #94969f;
-    text-align: end;
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 @media (max-width: 992px) {
     .useful-link  {
